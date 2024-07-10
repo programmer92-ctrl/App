@@ -1,5 +1,6 @@
 <?php
     include("connect.php");
+    include("errors.php");
     if(isset($_POST["login_submit"])){
         $user = mysqli_real_escape_string($conn, htmlspecialchars($_POST['username']));
         $password = mysqli_real_escape_string($conn, htmlspecialchars($_POST['password']));
